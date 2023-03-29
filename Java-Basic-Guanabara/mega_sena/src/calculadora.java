@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class megaSena {
+public class calculadora {
 
     public static void main(String[] args) {
 
