@@ -1,15 +1,17 @@
 public class App {
     public static void main(String[] args) throws Exception {
         
-        Smartphone cell1 = new Smartphone();
+       User[] users = new User[9];
 
-        cell1.name = "Samsung";
-        cell1.memory = 128;
-        cell1.ram = 6;
+       for (int i = 0; i < users.length; i++) {
+        User actual = new User();
+        actual.setFirstName("firstName " + i);
+        actual.setLastName("lastName " + i);
+        users[i] = actual;
+       }
 
-        String desc = cell1.descrptionAll();
-        System.out.println(desc);
-
-
+       System.out.println(users[2].getFirstName());
+       System.out.println(users[2].getLastName());
+        
     }
 }
