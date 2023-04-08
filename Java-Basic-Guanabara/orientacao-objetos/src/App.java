@@ -1,17 +1,29 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class App {
     public static void main(String[] args) throws Exception {
         
-       User[] users = new User[9];
+       List<User> users = new ArrayList<>();
 
-       for (int i = 0; i < users.length; i++) {
-        User actual = new User();
-        actual.setFirstName("firstName " + i);
-        actual.setLastName("lastName " + i);
-        users[i] = actual;
+       int i = 0;
+
+       while (i < 10) {
+        User actual = new User("Name " + i, "LastName " + i);
+        users.add(actual);
+        i++;
        }
 
-       System.out.println(users[2].getFirstName());
-       System.out.println(users[2].getLastName());
+       System.out.println(users.get(8).getFirstName());
+       System.out.println(users.get(8).getLastName());
+
+       User user11 = new User("Name 11", "LastName 11");
+
+       users.add(user11);
+
+       System.out.println(users.get(10).getLastName());
+
+       
         
     }
 }

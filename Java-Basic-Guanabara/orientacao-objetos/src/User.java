@@ -8,6 +8,11 @@ public class User {
         this.firstName = firstName.length();
     }
 
+    public User(String firstName, String lastName) {
+        this.firstName = firstName.length();
+        this.lastName = lastName;
+    }
+
     public int getFirstName() {
         return firstName;
     }
