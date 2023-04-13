@@ -6,6 +6,19 @@ public class Caneta {
     double ponta;
     boolean tampada;
 
+    public Caneta(String cor, String modelo, int carga, double ponta, boolean tampada) {
+
+        this.cor = cor;
+        this.tampada = tampada;
+        this.modelo = modelo;
+        this.carga = carga;
+        this.ponta = ponta;
+
+
+    }
+
+
+
     public void status(){
 
         System.out.println("A cor da caneta é: " + this.cor);

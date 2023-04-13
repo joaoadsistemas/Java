@@ -18,8 +18,13 @@ public class Nintendo {
         }
     }
 
-    public void ligar() {
-        this.ligado = true;
+    public boolean getLigar() {
+        return this.ligado;
+    }
+
+
+    public void setLigar(boolean set) {
+        this.ligado = set;
     }
 
 
