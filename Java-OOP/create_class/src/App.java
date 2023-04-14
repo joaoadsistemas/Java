@@ -17,7 +17,7 @@ public class App {
 
         System.out.println(conta1.getSaldo());
 
-        
+        conta1.fecharConta();
       
         
 
